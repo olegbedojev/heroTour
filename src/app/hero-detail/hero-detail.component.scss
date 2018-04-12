@@ -1,0 +1,36 @@
+$color_1: #607D8B;
+$color_2: #ccc;
+$font_family_1: Arial;
+$background_color_1: #eee;
+$background_color_2: #cfd8dc;
+
+label {
+	display: inline-block;
+	width: 3em;
+	margin: .5em 0;
+	color: $color_1;
+	font-weight: bold;
+}
+input {
+	height: 2em;
+	font-size: 1em;
+	padding-left: .4em;
+}
+button {
+	margin-top: 20px;
+	font-family: $font_family_1;
+	background-color: $background_color_1;
+	border: none;
+	padding: 5px 10px;
+	border-radius: 4px;
+	cursor: pointer;
+	cursor: hand;
+	&:hover {
+		background-color: $background_color_2;
+	}
+	&:disabled {
+		background-color: $background_color_1;
+		color: $color_2;
+		cursor: auto;
+	}
+}
